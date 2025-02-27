@@ -436,9 +436,45 @@ button {
 
 /** Адаптив */
 
-@media (hover:none) and (prefers-reduced-motion: reduce ) {
-    button {
-        transition: none !important;
+@media (hover: none) {
+      .menu__btn:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .nav__menu-item:hover {
+        transform: none;
+        opacity: 1;
+    }
+
+    .choose__color-btn:hover {
+        transform: none;
+        background-color: inherit;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    .composition__card-img {
+        border-radius: 0px;
+    }
+
+    .composition__card-img:hover {
+        transform: none;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    .smart__image:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .custom__btn:hover {
+        transform: none;
+    }
+    
+    .footer a:hover {
+        opacity: 1;
     }
 }
 
@@ -542,7 +578,6 @@ button {
         margin-bottom: 20px;
     }
 }
-
 @media (max-width: 700px) {
     .title {
         font-size: 60px;
