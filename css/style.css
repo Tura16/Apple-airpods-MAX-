@@ -105,6 +105,7 @@ button {
     width: 150px;
     height: 50px;
     text-transform: uppercase;
+    transition: 0.2s ease;
 
     background-color: #000;
     color: #fff;
@@ -114,12 +115,14 @@ button {
     border-radius: 50px;
     transform: scale(1.1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.2s ease;
+}
+
+.nav__menu-item {
+    transition: 0.2s ease;
 }
 
 .nav__menu-item:hover {
     transform: scale(1.1);
-    transition: all 0.2s ease;
     opacity: 0.6;
 }
 
@@ -217,6 +220,7 @@ button {
     border-radius: 20px;
     width: 260px;
     height: 275px;
+    transition: 0.2s ease;
 }
 
 .choose__color-btn--active {
@@ -224,11 +228,10 @@ button {
 }
 
 .choose__color-btn:hover {
-    border-radius: 50px;
     transform: scale(1.1);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.2s ease;
     background-color: #dfecea;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
 }
 
 
@@ -272,13 +275,14 @@ button {
 
 .composition__card-img {
     border-radius: 30px;
+    transition: 0.3s ease;
 }
 
 .composition__card-img:hover {
     border-radius: 50px;
     transform: scale(1.1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+    
 }
 
 /** 3 Секция Smart */
@@ -324,11 +328,14 @@ button {
     text-decoration: underline;
 }
 
+.smart__image {
+    transition: 0.3s ease;
+}
+
 .smart__image:hover {
     border-radius: 50px;
     transform: scale(1.1);
     box-shadow: 10px 14px 10px 10px rgba(45, 46, 148, 0.46);
-    transition: all 0.3s ease;
 }
 
 /** 4 Секция Custom */
@@ -372,6 +379,7 @@ button {
     width: 150px;
     height: 50px;
     text-transform: uppercase;
+    transition: 0.2s ease;
 
     background-color: #fff;
     color: #000;
@@ -379,7 +387,7 @@ button {
 
 .custom__btn:hover {
     transform: scale(1.1);
-    transition: all 0.2s ease;
+    
     background-color: #000;
     color: #fff;
 }
@@ -427,6 +435,12 @@ button {
 }
 
 /** Адаптив */
+
+@media (hover:none) and (prefers-reduced-motion: reduce ) {
+    button {
+        transition: none !important;
+    }
+}
 
 @media (max-width: 1457px) {
     .header__content-images img {
@@ -489,7 +503,7 @@ button {
     .documents__list {
         gap: 30px;
         flex-wrap: wrap;
-}
+    }
 }
 
 @media (max-width: 768px) {
