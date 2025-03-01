@@ -99,18 +99,31 @@ button {
     font-size: 16px;
 }
 
+.menu__link {
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.menu__link:focus-visible {
+    outline: 2px dashed #fff;
+}
+
 
 .menu__btn {
     border-radius: 30px;
     padding: 15px 58px;
     width: 150px;
-    height: 50px;
+    min-height: 50px;
     text-transform: uppercase;
     transition: 0.2s ease;
 
 
     background-color: #000;
     color: #fff;
+}
+
+.menu__btn:focus-visible {
+    outline: 2px dashed #fff;
 }
 
 .menu__btn:hover {
@@ -129,7 +142,6 @@ button {
 
 .nav__menu-item:active {
     transform: scale(0.90);
-    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.2);
     opacity: 0.5;
 }
 
@@ -228,6 +240,10 @@ button {
     width: 260px;
     height: 275px;
     transition: 0.2s ease;
+}
+
+.choose__color-btn:focus-visible {
+    outline: 5px dashed #fff;
 }
 
 .choose__color-btn--active {
@@ -392,6 +408,10 @@ button {
     color: #000;
 }
 
+.custom__btn:focus-visible {
+    outline: 5px dashed #fff;
+}
+
 .custom__btn:hover {
     transform: scale(1.1);
     background-color: #000;
@@ -440,6 +460,10 @@ button {
     font-size: 16px;
 }
 
+.footer a:focus-visible {
+    outline: 2px dashed #fff;
+}
+
 .footer a:hover {
     opacity: 0.8;
 }
@@ -471,7 +495,6 @@ button {
 
     .nav__menu-item:active {
         transform: scale(0.90);
-        box-shadow: 0 20px 28px rgba(0, 0, 0, 0.2);
         opacity: 0.8;
     }
     
@@ -657,6 +680,11 @@ button {
     .menu__list {
         flex-wrap: wrap;
         gap: 20px 40px;
+    }
+
+    .menu__link {
+        display: inline-block;
+        padding: 10px 0;
     }
 
     .menu__item-btn {
