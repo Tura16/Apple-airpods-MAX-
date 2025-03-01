@@ -667,6 +667,11 @@ button {
         padding: 40px 0;
     }
 
+    .composition__inner-text {
+        gap: 20px;
+        text-align: center;
+    }
+
     .composition__inner-text p {
         width: 100%;
     }
